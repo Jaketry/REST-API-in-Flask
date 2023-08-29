@@ -7,6 +7,7 @@ from flask_sqlalchemy import SQLAlchemy
 basedir = os.path.dirname(os.path.realpath(__file__))
 app.config ['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'movies.db')
 
+
 # create databse instance
 db = SQLAlchemy(app)
 app.app_context().push()
